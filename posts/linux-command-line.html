@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An SSH and Linux file navigation warm-up for OverTheWire Bandit.">
+<title>Starting with the Linux command line · Security Notes</title>
+<link rel="stylesheet" href="../style.css">
+<header><a href="../">Security Notes</a><nav aria-label="Main"><a href="../#notes">Posts</a></nav></header>
+<main>
+  <article class="post">
+    <div class="meta"><time datetime="2026-11-24">Nov 24, 2026</time><span>Linux</span></div>
+    <h1>Starting with the Linux command line</h1>
+    <p>OverTheWire Bandit starts with an SSH login. The first few exercises are a chance to practice navigating and reading files in a terminal.</p>
+    <h2>Read files by name</h2>
+    <p>Use <code>pwd</code> to see your working directory and <code>ls -la</code> to list entries, including dotfiles. Quote filenames with spaces so the shell passes each name as a single argument.</p>
+    <pre><code>pwd
+ls -la
+cat -- "practice notes.txt"</code></pre>
+    <p>The <code>--</code> marks the end of options. A relative path such as <code>./-draft</code> also works for a filename that starts with a dash.</p>
+    <p><a href="https://overthewire.org/wargames/bandit/bandit0.html">Bandit Level 0 instructions</a></p>
+  </article>
+</main>
+</html>
